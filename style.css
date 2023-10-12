@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:whitesmoke;
+    color: #0F1A20;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+
+header{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(39, 39, 39);
+    color: #FFFF;
+    padding: 1rem;
+    min-width: 600px;
+}
+
+header h1{
+    margin: auto;
+}
+
+.container{
+    position: absolute;
+    width:100%;
+    min-width:600px;
+    height:calc(100% - 65px);
+    min-height: 800px;
+    top:65px;
+    left:0;
+    border: 1px solid black;
+}
+
+.game-area{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    background-color: rgba(34, 34, 34, 0);
+    border-radius: 2px;
+    width: calc(100% - 100px);
+    max-width: 1900px;
+    min-width:600px;
+    height:calc(100% - 50px);
+    min-height: 700px;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+.middle{
+    /*background-color:rgba(230, 202, 167, 0.9);*/
+    width:70%;
+    max-width: 800px;
+    min-width:580px;
+    margin: 0 auto 50px;
+    flex-grow: 1;
+}
+
+.status-text{
+    color: darkgrey;
+    text-align:center;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+#cpu-hand-img h2{
+    font-size: larger;
+    position:relative;
+    top: -370px;
+    
+}
+
+#cpu-hand-img{
+    width: 400px;
+    height:340px;
+    background-color:skyblue;
+    margin:auto;
+    border:2px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+#cpu-hand-img p{
+    font-size: 250px;
+    margin: 0 20%;
+}
+
+#player-hand-img{
+    width: 300px;
+    height:240px;
+    background-color:skyblue;
+    margin:auto;
+    border:2px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.player-area{
+    background-color:rgba(0, 0, 0,0.1);
+    max-width: 700px;
+    min-width:540px;
+    height:280px;
+    border-radius: 10px;
+    margin:auto;
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.player-buttons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    gap: 20px;
+}
+
+.shape{
+    width:170px;
+    height:150px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shape:hover{
+    background-color: darkgray;
+}
